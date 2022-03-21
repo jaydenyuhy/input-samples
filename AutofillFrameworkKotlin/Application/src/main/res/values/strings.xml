@@ -21,6 +21,7 @@
     <string name="navigation_button_custom_virtual_view_login_label">Sample Login Using a Custom Virtual View</string>
     <string name="navigation_button_spinners_credit_card_label">Sample Credit Card Check Out Using Spinners</string>
     <string name="navigation_button_edittext_login_label">Sample Login Using EditTexts</string>
+    <string name="navigation_button_multiple_screens_login_label">Sample Login Using EditTexts with multiple screens</string>
     <string name="navigation_button_autocomplete_login_label">Sample Login Using AutoCompleteTextViews</string>
     <string name="navigation_button_email_compose_label">Sample Email Compose Using EditTexts</string>
     <string name="navigation_button_compound_view_credit_card_label">Sample Credit Card Check Out Using Compound Views</string>
@@ -54,6 +55,7 @@
     <string name="settings_auth_change_credentials_title">Change credentials</string>
     <string name="clear_label">Clear</string>
     <string name="login_label">Login</string>
+    <string name="next_label">Next</string>
     <string name="to_label">To</string>
     <string name="body_label">Body</string>
     <string name="autofill_master_login_label">Autofill Master Login</string>

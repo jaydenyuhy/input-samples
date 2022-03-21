@@ -27,6 +27,7 @@ import android.widget.FrameLayout
 import com.example.android.autofillframework.R
 import kotlinx.android.synthetic.main.cc_exp_date.view.ccExpMonth
 import kotlinx.android.synthetic.main.cc_exp_date.view.ccExpYear
+import java.lang.Exception
 import java.util.Calendar
 
 class CreditCardExpirationDateView @JvmOverloads constructor(
@@ -72,6 +73,13 @@ class CreditCardExpirationDateView @JvmOverloads constructor(
 
     override fun getAutofillValue() =
             AutofillValue.forDate(Calendar.getInstance().apply {
+                try {
+                    if (ccExpYear.selectedItem == null) {
+                        return@apply
+                    }
+                }catch (e: Exception){
+                    return@apply
+                }
                 // clear() sets hours, minutes, seconds, and millis to 0 to ensure that after
                 // autofill() is called, getAutofillValue() == the value that was originally passed
                 // into autofill(). Without clear(), the view will not turn yellow when updated.

@@ -40,6 +40,12 @@
             android:name=".app.StandardAutoCompleteSignInActivity"
             android:taskAffinity=".StandardAutoCompleteSignInActivity" />
         <activity
+            android:name=".app.MultipleScreensSignIn1Activity"
+            android:taskAffinity=".MultipleScreensSignIn1Activity" />
+        <activity
+            android:name=".app.MultipleScreensSignIn2Activity"
+            android:taskAffinity=".MultipleScreensSignIn2Activity" />
+        <activity
             android:name=".app.VirtualSignInActivity"
             android:taskAffinity=".VirtualSignInActivity" />
         <activity android:name=".app.WelcomeActivity" />

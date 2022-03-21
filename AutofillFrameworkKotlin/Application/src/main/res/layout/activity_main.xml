@@ -46,6 +46,15 @@
             app:imageColor="@android:color/holo_blue_dark"/>
 
         <com.example.android.autofillframework.app.NavigationItem
+            android:id="@+id/multipleScreenViewSignInButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:infoText="@string/edittext_login_info"
+            app:labelText="@string/navigation_button_multiple_screens_login_label"
+            app:itemLogo="@drawable/ic_edittexts_logo_24dp"
+            app:imageColor="@android:color/holo_red_dark" />
+
+        <com.example.android.autofillframework.app.NavigationItem
             android:id="@+id/virtualViewSignInButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

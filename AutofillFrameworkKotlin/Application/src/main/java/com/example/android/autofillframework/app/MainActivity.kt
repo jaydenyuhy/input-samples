@@ -19,12 +19,7 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.View
 import com.example.android.autofillframework.R
-import kotlinx.android.synthetic.main.activity_main.creditCardCheckoutButton
-import kotlinx.android.synthetic.main.activity_main.creditCardCompoundViewButton
-import kotlinx.android.synthetic.main.activity_main.emailComposeButton
-import kotlinx.android.synthetic.main.activity_main.standardLoginWithAutoCompleteButton
-import kotlinx.android.synthetic.main.activity_main.standardViewSignInButton
-import kotlinx.android.synthetic.main.activity_main.virtualViewSignInButton
+import kotlinx.android.synthetic.main.activity_main.*
 
 /**
  * This is used to launch sample activities that showcase autofill.
@@ -39,6 +34,9 @@ class MainActivity : AppCompatActivity() {
         })
         virtualViewSignInButton.setNavigationButtonClickListener(View.OnClickListener {
             startActivity(VirtualSignInActivity.getStartActivityIntent(this@MainActivity))
+        })
+        multipleScreenViewSignInButton.setNavigationButtonClickListener(View.OnClickListener {
+            startActivity(MultipleScreensSignIn1Activity.getStartActivityIntent(this@MainActivity))
         })
         creditCardCheckoutButton.setNavigationButtonClickListener(View.OnClickListener {
             startActivity(CreditCardActivity.getStartActivityIntent(this@MainActivity))
